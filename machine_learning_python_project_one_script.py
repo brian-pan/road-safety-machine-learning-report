@@ -11,3 +11,9 @@ import numpy as np
 import pandas as pd
 import scipy as sp
 import scipy.stats as stats
+
+# Features pre-processing and principal component analysis (pca) 
+from sklearn.feature_selection import SelectKBest, f_classif
+from sklearn import preprocessing
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
