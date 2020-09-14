@@ -16,4 +16,7 @@ import scipy.stats as stats
 from sklearn.feature_selection import SelectKBest, f_classif
 from sklearn import preprocessing
 from sklearn.preprocessing import StandardScaler
-from sklearn.decomposition import PCA
+from sklearn.decomposition import PCA 
+
+# Train-test split
+from sklearn.model_selection import train_test_split
