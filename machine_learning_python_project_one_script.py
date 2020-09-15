@@ -20,3 +20,9 @@ from sklearn.decomposition import PCA
 
 # Train-test split
 from sklearn.model_selection import train_test_split
+
+# Classifiers 
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, AdaBoostClassifier, VotingClassifier
