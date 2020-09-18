@@ -32,3 +32,10 @@ from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier,
 import xgboost as xgb
 from xgboost.sklearn import XGBClassifier
 from mlxtend.classifier import StackingClassifier
+
+# Classifiers evaluation metrics
+from sklearn.metrics import accuracy_score, roc_auc_score, auc, roc_curve
+from sklearn.model_selection import cross_val_score
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report
+from sklearn.metrics import matthews_corrcoef
