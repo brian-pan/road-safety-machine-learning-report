@@ -67,3 +67,8 @@ warnings.filterwarnings(
     module="scipy",
     message="^internal gelsd"
 )
+
+# define new print function which contains color option
+import sys
+
+python_print = print
