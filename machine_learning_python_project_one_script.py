@@ -43,3 +43,10 @@ from sklearn.metrics import matthews_corrcoef
 # Random resampling
 from imblearn.under_sampling import RandomUnderSampler
 from collections import Counter
+
+# Tuning hyperparameters
+from sklearn.model_selection import RandomizedSearchCV
+
+# Other
+from time import time
+from scipy.stats import ttest_ind
