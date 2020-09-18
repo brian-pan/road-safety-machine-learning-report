@@ -12,6 +12,7 @@ import pandas as pd
 import scipy as sp
 import scipy.stats as stats
 
+# Commented out IPython magic to ensure Python compatibility.
 # Features pre-processing and principal component analysis (pca) 
 from sklearn.feature_selection import SelectKBest, f_classif
 from sklearn import preprocessing
@@ -50,3 +51,11 @@ from sklearn.model_selection import RandomizedSearchCV
 # Other
 from time import time
 from scipy.stats import ttest_ind
+
+# Ploting
+from matplotlib import pyplot as plt
+# %matplotlib inline
+import seaborn as sns
+sns.set_style('darkgrid')
+from IPython.display import display
+pd.options.display.float_format = '{:.3f}'.format
