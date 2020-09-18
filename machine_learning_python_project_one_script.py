@@ -59,3 +59,11 @@ import seaborn as sns
 sns.set_style('darkgrid')
 from IPython.display import display
 pd.options.display.float_format = '{:.3f}'.format
+
+# Suppressing annoying harmless error
+import warnings
+warnings.filterwarnings(
+    action="ignore",
+    module="scipy",
+    message="^internal gelsd"
+)
