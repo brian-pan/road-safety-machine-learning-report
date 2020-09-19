@@ -72,3 +72,14 @@ warnings.filterwarnings(
 import sys
 
 python_print = print
+
+def print(*objects, sep=' ', end='\n', file=sys.stdout, color=(), fit_len=-1):
+    line = "".join(map(str, objects))
+    fit_len = max(fit_len - len(line), 0)
+    for c in color:
+        if len(objects) > 1:
+            objects = (f"\033[{c}m{objects[0]}",) + objects[1:-1] + (
+                f"{objects[-1]}{' ' * fit_len}\033[0m",)
+        elif len(objects) == 1:
+            objects = (f"\033[{c}m{objects[0]}{' ' * fit_len}\033[0m",)
+    python_print(*objects, sep=sep, end=end, file=file)
