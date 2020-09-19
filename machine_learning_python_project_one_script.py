@@ -83,3 +83,9 @@ def print(*objects, sep=' ', end='\n', file=sys.stdout, color=(), fit_len=-1):
         elif len(objects) == 1:
             objects = (f"\033[{c}m{objects[0]}{' ' * fit_len}\033[0m",)
     python_print(*objects, sep=sep, end=end, file=file)
+
+# download dataset
+!wget https://raw.githubusercontent.com/skyu0221/online-dropbox/master/ml/capstone1/project1/UK_RoadSafety_Accidents.csv
+
+# load data
+df = pd.read_csv("UK_RoadSafety_Accidents.csv") # df=dataframe
